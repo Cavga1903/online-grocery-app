@@ -28,15 +28,14 @@ const ProfileScreen = () => {
 
   const pickImage = async () => {
     const result = await ImagePicker.launchImageLibraryAsync({
-      mediaTypes: ImagePicker.MediaTypeOptions.Images, // ✔️ hâlâ geçerli ama deprecated uyarısı çıkabilir
+      mediaTypes: ImagePicker.MediaTypeOptions.Images,
       allowsEditing: true,
       aspect: [1, 1],
       quality: 0.5,
     });
 
     if (!result.canceled) {
-      const imageUri = result.assets[0].uri;
-      console.log('Selected Image:', imageUri);
+      setForm({ ...form, avatar: result.assets[0].uri });
     }
   };
 
@@ -48,8 +47,8 @@ const ProfileScreen = () => {
 
         <TouchableOpacity onPress={editMode ? pickImage : undefined} className="mb-4 items-center">
           <Image
-            source={{ uri: form.avatar || 'https://via.placeholder.com/100x100.png?text=Avatar1' }}
-            className="h-24 w-24 rounded-full border border-green-300"
+            source={{ uri: form.avatar || 'https://via.placeholder.com/100x100.png?text=Avatar' }}
+            className="h-24 w-24 rounded-full border border-gray-300"
           />
           {editMode && <Text className="mt-2 text-green-600">Change Photo</Text>}
         </TouchableOpacity>
