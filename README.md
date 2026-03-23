@@ -105,3 +105,38 @@ MIT Lisansı
 ---
 
 Hazırlayan: **Tolga'nın Gelişim Günlüğü** 🚀
+
+---
+
+## 🇩🇪 Deutsche Beschreibung
+
+**Online Grocery App** ist eine moderne mobile Einkaufs-App, entwickelt mit Expo und React Native. Sie bietet eine benutzerfreundliche Oberfläche im iOS-Stil für das Einkaufen von Lebensmitteln.
+
+### ✨ Funktionen
+
+* ✅ **Modernes UI** — Benutzerfreundliche Oberfläche im iOS-Stil
+* 🧭 **React Navigation** — Einfache Seitennavigation mit Bottom Tab Bar
+* 🛒 **Warenkorb-Verwaltung** — Produkte hinzufügen, reduzieren, entfernen
+* 🧠 **Context API** — Globale Zustandsverwaltung
+* 🔍 **Suche** — Echtzeit-Produktfilterung
+* 🍽️ **TheMealDB API** — Integration mit externer Speisen-API
+* 🧾 **Gesamtbetrag-Berechnung** und Checkout
+
+### 🧪 Installation & Start
+
+```bash
+git clone https://github.com/Cavga1903/online-grocery-app.git
+cd online-grocery-app
+npm install
+npx expo start
+```
+
+### 📦 Verwendete Technologien
+
+* [Expo](https://expo.dev/)
+* [React Native](https://reactnative.dev/)
+* [TypeScript](https://www.typescriptlang.org/)
+* [Tailwind (NativeWind)](https://www.nativewind.dev/)
+* [React Navigation](https://reactnavigation.org/)
+* Context API
+* Axios
